@@ -1,0 +1,39 @@
+
+        #uploadedImage {
+            max-width: 300px;
+           
+        }
+
+       
+ body {
+  font-family: Arial, sans-serif;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* 파일 업로드 input */
+input {
+  width: 30%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+/* 미리보기 영역 */
+#preview {
+  margin-top: 15px;
+}
+
+#uploadedImage {
+  width: 300px;
+  height: 300px;
+  object-fit: cover; /* 사진 찌그러짐 방지 */
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+/* 결과 표시 영역 */
+#label-container {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}

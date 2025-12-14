@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pet Mood</title>
+
+   <link rel="stylesheet" href="mystyle.css"> 
+
+</head>
+<body>
+
+    <h1>얼굴형 판별기</h1>
+
+    <!-- 이미지 업로드를 위한 파일 입력 필드 -->
+    <p><input type="file" id="imageInput" accept="image/*"></p>
+
+    <!-- 업로드된 이미지를 미리보기로 표시할 영역 -->
+    <div id="preview">
+        <img src="intro.png" id="uploadedImage" alt="Uploaded Image">
+    </div>
+     <br>
+    <!-- 모델의 예측 결과를 표시할 영역 -->
+    <div id="label-container"></div>
+
+
+    <!-- TensorFlow.js 및 Teachable Machine 라이브러리 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+    <!-- 모델 및 예측 관련 스크립트 -->
+    <script type="text/javascript" src="myjs.js"></script>
+      
+
+</body>
+</html>
